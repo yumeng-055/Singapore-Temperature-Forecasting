@@ -111,7 +111,9 @@ cutoff and how to interpret the prediction intervals. Data coverage stops at 202
 singapore-temperature-forecasting/
 ├── README.md
 ├── requirements.txt
-├── data/README.md
+├── data/
+│   ├── README.md
+│   └── annual_climate.csv
 ├── notebooks/analysis.ipynb
 ├── reports/CASE_STUDY.md
 ├── src/
@@ -141,14 +143,14 @@ singapore-temperature-forecasting/
 Tested with Python 3.13.9. Run from this project directory.
 
 1. Install dependencies: `python -m pip install -r requirements.txt`.
-2. Place the unchanged source CSV at `data/annual_climate.csv` as described in the [data guide](data/README.md).
+2. The unchanged source CSV is included at [data/annual_climate.csv](data/annual_climate.csv); no separate download is needed.
 3. Generate tables and figures: `python -m src.run --data data/annual_climate.csv`.
 4. Open `notebooks/analysis.ipynb` with this environment and run all cells from the notebook directory.
 
 An external input is also supported: `python -m src.run --data PATH_TO_ORIGINAL_CSV`.
-The executed notebook was verified with an external local source; the CSV is excluded
-from the public deliverable. Set `CLIMATE_DATA_PATH` to that file when executing
-the notebook without copying it into `data/`.
+The command and executed notebook were verified using the included CSV. The
+notebook reads it by default; `CLIMATE_DATA_PATH` optionally selects an external
+file with the same export format.
 
 ## 8. Technologies
 

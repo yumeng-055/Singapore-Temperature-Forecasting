@@ -1,14 +1,16 @@
-# Local data setup and dictionary
+# Included data and dictionary
 
 This individual academic case uses the supplied SingStat Table Builder export,
 **Air Temperature And Sunshine, Relative Humidity And Rainfall, Annual**.
 The export identifies **National Environment Agency** as its source, a last-update
 date of 10 January 2025 and a generation date of 11 December 2025. These are file
-metadata, not a claim that the data are current today. Redistribution permission
-has not been established; the original CSV is supplied locally and excluded from this project.
+metadata, not a claim that the data are current today. The supplied export is
+included at [annual_climate.csv](annual_climate.csv) under a neutral filename.
+Its bytes and source metadata are unchanged. No additional third-party data licence is asserted.
 
-Place your original export at `data/annual_climate.csv` without changing its bytes.
-The loader skips nine metadata rows and selects exactly the two series below.
+After cloning the repository, no separate data download or manual placement is needed.
+The loader reads `data/annual_climate.csv`, skips nine metadata rows and selects
+exactly the two series below.
 
 | Field | Source series | Definition | Unit |
 |---|---|---|---|
@@ -23,4 +25,5 @@ Exact geographical station coverage and detailed measurement methodology are
 not specified in the supplied export; do not infer them from the national title.
 
 Published artifacts contain aggregate statistics, annual model predictions and
-figures for evidence review. The full source export is kept outside the public project.
+figures for evidence review, alongside the unchanged source export. Academic
+submission files and private verification records remain outside this project.

@@ -147,8 +147,9 @@ cannot demonstrate cost savings, heat incident reduction or campaign effectivene
 The [notebook](../notebooks/analysis.ipynb) exposes input validation, exploratory
 analysis, candidate selection, model coefficients, diagnostics, holdout comparison
 and the future scenario. The [command-line entry point](../src/run.py) generates
-the linked tables and charts from a locally supplied source file. The original
-source CSV and academic submission are physically outside the public project.
+the linked tables and charts from the included [annual climate CSV](../data/annual_climate.csv).
+The source export has a neutral filename and unchanged contents. Academic submissions
+and private verification records are physically outside the project.
 
 The original numerical workflow and the modular implementation were compared on
 candidate AICs, fitted parameters and values, residuals and forecast arrays. The
