@@ -1,0 +1,8 @@
+{
+  "observations": 65,
+  "train_observations": 55,
+  "test_observations": 10,
+  "trend_c_per_year": 0.018238636363636346,
+  "pearson_r": -0.30322571609125604,
+  "future_information_cutoff": 2014
+}
